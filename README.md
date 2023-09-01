@@ -37,10 +37,10 @@ void app_main()
 {
     rc522_config_t config = {
         .spi.host = VSPI_HOST,
-        .spi.miso_gpio = 25,
-        .spi.mosi_gpio = 23,
-        .spi.sck_gpio = 19,
-        .spi.sda_gpio = 22,
+        .spi.miso_gpio = 19,
+        .spi.mosi_gpio = 18,
+        .spi.sck_gpio = 5,
+        .spi.sda_gpio = 12,
     };
 
     rc522_create(&config, &scanner);
